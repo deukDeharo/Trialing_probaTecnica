@@ -9,7 +9,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 $app->get('/', function (Request $request, Response $response, $args) { 
 
     $renderer = new PhpRenderer(__DIR__ . '/../Templates/');
-    return $renderer->render($response, "login.php", $args);
+    return $renderer->render($response, "logIn.php", $args);
 });
 
 $app->get('/newUser', function (Request $request, Response $response, $args) { 
